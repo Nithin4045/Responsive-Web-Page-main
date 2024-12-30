@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Responsive Web Page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(
+          to right,
+          rgb(215, 248, 70),
+          rgb(236, 120, 236)
+        );
+        overflow-x: hidden;
+      }
+
+      /* Navbar */
+      #navbar {
+        background-color: rgb(243, 56, 56);
+        padding: 10px 5%;
+      }
+
+      #navbar ul {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        font-size: larger;
+      }
+
+      #navbar ul li {
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+      }
+
+      #navbar ul li:hover {
+        text-decoration: underline;
+      }
+
+      /* Main Content Section */
+      #body1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+      }
+
+      #con {
+        flex: 1;
+        padding: 20px;
+        max-width: 500px;
+      }
+
+      #con h1 {
+        font-size: 2.5rem;
+        color: rgb(243, 56, 56);
+      }
+
+      #con h4 {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-top: 15px;
+      }
+
+      #con button {
+        margin-top: 20px;
+        height: 40px;
+        width: 170px;
+        font-size: 15px;
+        background-color: rgb(243, 56, 56);
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      #con button:hover {
+        background-color: rgb(200, 50, 50);
+      }
+
+      #img {
+        position: absolute;
+        left: 70%;
+      }
+      #img img {
+        align-items: center;
+        max-width: 50%;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      /* Images Section */
+      #fl {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+      }
+
+      #fl img {
+        border-radius: 10px;
+        width: 100%;
+        max-width: 230px;
+        height: auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      #f2 {
+        background-color: rgb(243, 56, 56);
+        padding: 20px;
+        color: white;
+        text-align: center;
+        border-radius: 10px;
+        max-width: 370px;
+        margin: 20px auto;
+      }
+
+      #f2 button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: white;
+        color: rgb(243, 56, 56);
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      #f2 button:hover {
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+
+      #f2 a {
+        color: rgb(243, 56, 56);
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      #f2 a:hover {
+        text-decoration: underline;
+      }
+
+      /* Footer */
+      #name {
+        background-color: black;
+        padding: 20px;
+        color: white;
+        text-align: center;
+      }
+
+      #name h2 {
+        font-size: 1.5rem;
+      }
+
+      /* Responsive Styles for Mobile Devices */
+      @media (max-width: 768px) {
+        #body1 {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        #img img {
+          max-width: 90%;
+        }
+
+        #navbar ul {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        #navbar ul li {
+          margin: 10px 0;
+        }
+      }
+
+      /* Styles for very small screens (max-width: 480px) */
+      @media (max-width: 480px) {
+        #navbar ul {
+          font-size: small;
+        }
+
+        #con h1 {
+          font-size: 1.8rem;
+        }
+
+        #con h4 {
+          font-size: 0.9rem;
+        }
+
+        #con button {
+          width: 150px;
+          font-size: 14px;
+        }
+
+        #fl img {
+          max-width: 180px;
+        }
+
+        #f2 h1 {
+          font-size: 1.2rem;
+        }
+
+        #f2 button {
+          font-size: 14px;
+        }
+
+        #name h2 {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="navbar">
+      <ul>
+        <li><b>lorem1</b></li>
+        <li><b>lorem2</b></li>
+        <li><b>lorem3</b></li>
+        <li><b>lorem4</b></li>
+        <li><b>lorem5</b></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div id="body1">
+      <div id="con">
+        <h1><b>LOREM IPSUM</b></h1>
+        <h4>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+          nesciunt excepturi et! Reiciendis eaque architecto voluptatum, qui, a
+          accusantium suscipit minus nostrum praesentium rem sunt, tempora quas.
+          Sapiente, deserunt numquam?
+        </h4>
+        <button>Click Me</button>
+      </div>
+      <div id="img">
+        <img src="/images/main.jpg" alt="Main Image" />
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- Image and Text Section -->
+    <div id="fl">
+      <div><img src="/images/1.jpg" alt="Image 1" /></div>
+      <div><img src="/images/2.jpg" alt="Image 2" /></div>
+      <div><img src="/images/3.jpg" alt="Image 3" /></div>
+    </div>
+
+    <div id="f2">
+      <h1><b>LOREM IPSUM CLICK HERE</b></h1>
+      <button>
+        <a href="/TASL-2.html" target="_blank"
+          >Click <i class="fa-solid fa-forward"></i
+        ></a>
+      </button>
+    </div>
+
+    <!-- Footer -->
+    <div id="name">
+      <h2><b>BY: Nithin Kumar E</b></h2>
+    </div>
+  </body>
+</html>
